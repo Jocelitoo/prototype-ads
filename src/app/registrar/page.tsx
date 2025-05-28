@@ -29,7 +29,7 @@ const Register = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof registerSchema>) {
+  function onSubmit() {
     form.reset();
     toast("Dados enviados para análise", {
       style: { backgroundColor: "#13ec7e" },

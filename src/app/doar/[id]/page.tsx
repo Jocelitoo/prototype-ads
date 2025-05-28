@@ -22,10 +22,12 @@ const Donation = async ({ params }: ProductParamsProps) => {
       <div className="flex items-center justify-center gap-2 w-full">
         <p>R$ {athlete?.currentValue}</p>
 
-        <Progress
-          value={(athlete?.currentValue / athlete?.neededValue) * 100}
-          className="w-[50%] text-green-300"
-        />
+        {athlete?.currentValue && (
+          <Progress
+            value={(athlete?.currentValue / athlete?.neededValue) * 100}
+            className="w-[50%] text-green-300"
+          />
+        )}
 
         <p>R$ {athlete?.neededValue}</p>
       </div>
