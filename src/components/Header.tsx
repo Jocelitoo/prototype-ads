@@ -31,6 +31,12 @@ export const Header = () => {
 
           <div className="grid gap-4 py-4">
             <SheetClose className="border text-start rounded-md hover:bg-green-300">
+              <Link href={"/atletas"} className="flex p-2">
+                Atletas
+              </Link>
+            </SheetClose>
+
+            <SheetClose className="border text-start rounded-md hover:bg-green-300">
               <Link href={"/registrar"} className="flex p-2">
                 Sou um atleta
               </Link>
